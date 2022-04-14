@@ -5,10 +5,10 @@ import Entidades.Televisor;
 
 public class Electro {
     public static void main(String[] args) {
-//     Lavarropa L = new Lavarropa();
-//     L.crearLavarropa();
-//     L.precioFinal();
-//        System.out.println(L.toString());
+     Lavarropa L = new Lavarropa();
+     L.crearLavarropa();
+     L.precioFinal();
+        System.out.println(L.toString());
        
 Televisor T = new Televisor();
         T.crearTelevisor();
