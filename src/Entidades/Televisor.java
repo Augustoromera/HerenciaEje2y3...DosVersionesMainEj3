@@ -5,6 +5,7 @@ import java.lang.Math;
 public class Televisor extends Electrodomestico {
     protected Double pulgada;
     protected boolean tdt;
+    protected Integer tipo = 0; //colocamos bandera para poder hacer la sumatoria de precios final en eje3 y difereciar si es TV o Lav
 
     public Televisor() {
     }
@@ -30,6 +31,14 @@ public class Televisor extends Electrodomestico {
     public void setTdt(boolean tdt) {
         this.tdt = tdt;
     }
+
+    public Integer getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Integer tipo) {
+        this.tipo = tipo;
+    }
   
     public void crearTelevisor(){     
        super.crearElectrodomestico();
@@ -40,7 +49,7 @@ public class Televisor extends Electrodomestico {
           this.tdt=true;  
         }else this.tdt=false;        
    }
-       public void precioFinal() {
+       public void precioFinalTv() {
         super.precioFinal();
         if (this.pulgada > 40) {
 
